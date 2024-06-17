@@ -1,0 +1,5 @@
+bin/
+compile/compile/bin/
+compile/compile/obj/
+compile/packages/
+generator/compilecommand.exe
