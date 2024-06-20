@@ -11,12 +11,12 @@ I'm not a .Net expert so I'm not sure it will be compatible with .Net core but I
 You will also need to install _Go_ to build it as there is a secod executable written in go that will format the compilation database.
 I used go 1.21.
 
-there is a "_Makefile_" file that will build the two project and join it in the same folder.
+To build the project, there is a powershell script called "_build.ps1_" that actually do the build and bring alll of the executable to the same folder.
 
-I use the make that was actually delivered with mingw so the build command is just:
+You have to execute this build from a Powershell instance that is configured to use the Microsoft build (like the visual studio powershell).
 
 ```
-mingw32-make
+./build.ps1
 ```
 
 this will create a "bin" folder at the root of the project containing a lot of things.
