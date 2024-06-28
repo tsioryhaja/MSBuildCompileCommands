@@ -175,7 +175,8 @@ func DecodeUtf16(b []byte, order binary.ByteOrder) (result string, err error) {
 func DeleteFiles(command string, files []string) string {
   var toDelete int = 0
   for _, strVal := range files {
-    var needQuote bool = strings.Contains(strVal, "\"") || strings.Contains(strVal, " ") || strings.Contains(strVal, "\\")
+    // var needQuote bool = strings.Contains(strVal, "\"") || strings.Contains(strVal, " ") || strings.Contains(strVal, "\\")
+    var needQuote bool = strings.Contains(strVal, " ")
     if needQuote {
       toDelete += 2
     }
